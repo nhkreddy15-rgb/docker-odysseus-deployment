@@ -1,18 +1,29 @@
 # Dockerized Odysseus AI Platform Deployment
 
+## Project Highlights
+
+* Multi-container Docker Compose deployment
+* Nginx reverse proxy implementation
+* Container networking and service discovery
+* Persistent volume management
+* Self-hosted AI productivity platform
+* Container monitoring and troubleshooting
+
+---
+
 ## Project Overview
 
 This project demonstrates the deployment of the Odysseus AI productivity platform using Docker Compose and multiple supporting services.
 
 The deployment includes:
 
-- Odysseus Application
-- Nginx Reverse Proxy
-- ChromaDB Vector Database
-- SearXNG Search Engine
-- NTFY Notification Service
+* Odysseus Application
+* Nginx Reverse Proxy
+* ChromaDB Vector Database
+* SearXNG Search Engine
+* NTFY Notification Service
 
-The platform was deployed locally using Docker and Docker Compose and configured for persistent storage and container networking.
+The platform was deployed locally using Docker and Docker Compose and configured for persistent storage, container networking, and reverse proxy access.
 
 ---
 
@@ -43,33 +54,34 @@ The platform was deployed locally using Docker and Docker Compose and configured
 | - SearXNG        |
 | - NTFY           |
 +------------------+
+```
 
 ---
 
 ## Technologies Used
 
-- Docker
-- Docker Compose
-- Nginx
-- ChromaDB
-- SearXNG
-- NTFY
-- PowerShell
-- Windows
+* Docker
+* Docker Compose
+* Nginx
+* ChromaDB
+* SearXNG
+* NTFY
+* PowerShell
+* Windows
 
 ---
 
 ## Key Tasks Performed
 
-- Deployed Odysseus using Docker Compose
-- Managed multi-container architecture
-- Configured container networking
-- Configured persistent storage volumes
-- Added Nginx reverse proxy layer
-- Verified service connectivity
-- Managed container lifecycle operations
-- Monitored running containers and services
-- Troubleshot deployment issues
+* Deployed Odysseus using Docker Compose
+* Managed multi-container architecture
+* Configured container networking
+* Configured persistent storage volumes
+* Added Nginx reverse proxy layer
+* Verified service connectivity
+* Managed container lifecycle operations
+* Monitored running containers and services
+* Troubleshot deployment issues
 
 ---
 
@@ -93,11 +105,8 @@ The platform was deployed locally using Docker and Docker Compose and configured
 
 ```bash
 docker compose up -d
-
 docker ps
-
 docker compose ls
-
 docker compose config
 ```
 
@@ -105,4 +114,5 @@ docker compose config
 
 ## Outcome
 
-Successfully deployed and managed a containerized AI productivity platform using Docker Compose and Nginx reverse proxy while integrating multiple supporting services.
+Successfully deployed and managed a containerized AI productivity platform using Docker Compose, Nginx reverse proxy, and supporting services while implementing container networking, persistent storage, and service monitoring.
+
