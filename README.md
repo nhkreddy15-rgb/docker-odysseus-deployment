@@ -18,17 +18,31 @@ The platform was deployed locally using Docker and Docker Compose and configured
 
 ## Architecture
 
-User Browser
-↓
-Nginx Reverse Proxy (Port 8088)
-↓
-Odysseus Application (Port 7000)
-↓
-Supporting Services
-
-- ChromaDB
-- SearXNG
-- NTFY
+```text
++------------------+
+|   User Browser   |
++--------+---------+
+         |
+         v
++------------------+
+|  Nginx Proxy     |
+|   Port 8088      |
++--------+---------+
+         |
+         v
++------------------+
+|    Odysseus      |
+|    Port 7000     |
++--------+---------+
+         |
+         v
++------------------+
+| Supporting       |
+| Services         |
+| - ChromaDB       |
+| - SearXNG        |
+| - NTFY           |
++------------------+
 
 ---
 
